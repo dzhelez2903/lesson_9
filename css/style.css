@@ -1,0 +1,59 @@
+.container {
+    max-width: 1700px;
+    margin: auto;
+    padding-top: 84px;
+
+}
+
+.up_container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 55px;
+    grid-template-areas:
+        "first first second"
+        "first first third"
+        "fourth fifth sixth";
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.down_container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-row: repeat (2, auto);
+    background-color: black;
+}
+
+#item_1 {
+    grid-area: first;
+}
+
+#item_2 {
+    grid-area: second;
+}
+
+#item_3 {
+    grid-area: third;
+}
+
+#item_4 {
+    grid-area: fourth;
+}
+
+#item_5 {
+    grid-area: fifth;
+}
+
+#item_6 {
+    grid-area: sixth;
+}
+
+img :hover {
+    opacity: 50%;
+}
+
+.up_container :hover,
+.down_container :hover {
+    opacity: 0.5;
+}
